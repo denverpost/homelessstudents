@@ -1,0 +1,29 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /video/
+Disallow: /img/
+Disallow: /css/
+Disallow: /js/
+Disallow: /edge_includes/
+Disallow: /images/
+Disallow: /tease.html
+Disallow: /stormChaserDetail2_edge.js
+Disallow: /stormChaserDetail2_edgeActions.js
+Disallow: /stormChaserDetail2_edgePreload.js
+Disallow: /stormChaserMap_edge.js
+Disallow: /stormChaserMap_edgeActions.js
+Disallow: /stormChaserMap_edgePreload.js
+Disallow: /stormChaserMapPart1_edge.js
+Disallow: /stormChaserMapPart1_edgeActions.js
+Disallow: /stormChaserMapPart1_edgePreload.js
+Disallow: /stormChaserMapPart2_edge.js
+Disallow: /stormChaserMapPart2_edgeActions.js
+Disallow: /stormChaserMapPart2_edgePreload.js
+Disallow: /tornadoAnatomy_edge.js
+Disallow: /tornadoAnatomy_edgeActions.js
+Disallow: /tornadoAnatomy_edgePreload.js
+
+User-agent: Googlebot-Image
+Disallow: /
