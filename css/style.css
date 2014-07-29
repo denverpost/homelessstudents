@@ -54,33 +54,22 @@ p.byline {
     background-position:50% 90%; 
     background-repeat:no-repeat; 
     background-size: cover;
+    background-attachment: fixed;
     height:90%;
     width:100%;
-    margin: 0;
+    margin: 0 0 2em;
     overflow: hidden;
-    margin-bottom:2em;
     opacity: 0;
+}
+.opener.tweener {
+    height:105%;
+    margin: 2em 0;
 }
 .opener1 {
     background-image: url('../img/el-reno-tornado-world-herald.jpg');
 }
-.opener2 {
-    background-image: url('../img/storm-coming-blue.jpg');
-}
-.opener3 {
-    background-image: url('../img/paul-samaras-storm-chasing.jpg');
-}
-.opener4 {
-    background-image: url('../img/chevy-cobalt-tornado.jpg');
-}
-.opener5 {
-    background-image: url('../img/el-reno-tornado-reuter-road.jpg');
-}
-.opener6 {
-    background-image: url('../img/tim-samaras-memorial.jpg');
-}
-.opener7 {
-    background-image: url('../img/storm-chaser-silhouette.jpg');
+.tweener1 {
+    background-image: url('../img/el-reno-tornado-2.jpg');
 }
 .opener .openercaption {
     position:absolute;
@@ -92,8 +81,11 @@ p.byline {
     height:0;
     clear:both;
 }
-.top-bar-section ul {
-    background: black;
+.top-bar, .top-bar-section ul, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
+    background:#000;
+}
+.top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
+    border-right:solid 1px #353535;
 }
 .top-bar-section ul li.bottom a {
     padding:.5em .8em;
@@ -147,7 +139,7 @@ h3.titlespan {
     margin:0;
     height:0;
 }
-.opener div.title {
+.opener div.title, .tweener div.title {
     width:100%;
     height:100%;
     position: relative;
