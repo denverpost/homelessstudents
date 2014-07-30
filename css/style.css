@@ -144,10 +144,18 @@ h3.titlespan {
     height:100%;
     position: relative;
 }
-div.title #title1, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
+div.title #title1, div.title #title2, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
     height:50%;
 }
 div#title1 {
+    width:100%;
+    left:50%;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+div#title2 {
     width:100%;
     left:50%;
     text-align: center;
@@ -187,12 +195,12 @@ div#title6 {
     position:relative;
     overflow:visible;
 }
-div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
+div#title1 h3.titlespan, div#title2 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
     top:54%;
     position: absolute;
     left:1.5em;
 }
-div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
+div#title1 h2.title, div#title2 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
     top:28%;
     position: absolute;
     left:-3em;
