@@ -5,7 +5,8 @@ function revealBio(bioname) {
 	$(bioname).foundation('reveal', 'open');
 }
 
-var derp1 = function(){ $('div.opener').bind('inview', function(event, visible) {
+/*function titleChange() {
+$('div.opener').bind('inview', function(event, visible) {
 	if (visible) {
 		$(this).stop().animate({ opacity: 1}, 1500);
 	}
@@ -17,7 +18,15 @@ var derp1 = function(){ $('div.opener').bind('inview', function(event, visible) 
 		$('#name2').stop().animate({opacity: 0}, 150);
 	}
 })};
-derp1();
+derp1(); */
+
+$(window).scroll(function() {
+	var s = $(window).scrollTop(),
+	opacityNew = s / 500;
+	$(".opener.opener1 div#title").children().css("opacity", 1 - opacityNew);
+	$('#name1').css("opacity", 1 - opacityNew*.5);
+	$('#name2').css("opacity", opacityNew*.5);
+});
 
 $(document).ready(function(){
 	$('.centergallery').slick({
