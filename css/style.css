@@ -55,7 +55,7 @@ p.byline {
     background-repeat:no-repeat; 
     background-size: cover;
     background-attachment: fixed;
-    height:90%;
+    height:100%;
     width:100%;
     margin: 0 0 2em;
     overflow: hidden;
@@ -66,7 +66,7 @@ p.byline {
     margin: 2em 0;
 }
 .opener1 {
-    background-image: url('../img/el-reno-tornado-world-herald.jpg');
+    background-image: url('../img/part1main.jpg');
 }
 .tweener1 {
     background-image: url('../img/el-reno-tornado-2.jpg');
@@ -118,6 +118,7 @@ h2.title {
     line-height: 1em;
     text-transform: uppercase;
     letter-spacing:1px;
+    text-align: center;
     color: #f5f5ff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
@@ -132,6 +133,7 @@ h3.titlespan {
     line-height: 1em;
     text-transform:none;
     letter-spacing:1px;
+    text-align: center;
     color: #f5f5ff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
@@ -139,71 +141,17 @@ h3.titlespan {
     margin:0;
     height:0;
 }
-.opener div.title, .tweener div.title {
+.opener div#title, .tweener div.title {
     width:100%;
     height:100%;
-    position: relative;
 }
-div.title #title1, div.title #title2, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
-    height:50%;
-}
-div#title1 {
+div#title h3.titlespan {
     width:100%;
-    left:50%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
+    margin:10% 0 0;
 }
-div#title2 {
+div#title h2.title {
     width:100%;
-    left:50%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
-}
-div#title3 {
-    width:100%;
-    left:40%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
-}
-div#title4 {
-    width:100%;
-    left:20%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
-}
-div#title5 {
-    width:100%;
-    left:60%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
-}
-div#title6 {
-    width:100%;
-    left:25%;
-    text-align: center;
-    margin: 0 auto;
-    position:relative;
-    overflow:visible;
-}
-div#title1 h3.titlespan, div#title2 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
-    top:54%;
-    position: absolute;
-    left:1.5em;
-}
-div#title1 h2.title, div#title2 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
-    top:28%;
-    position: absolute;
-    left:-3em;
+    margin:3% 0 0;
 }
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -382,6 +330,9 @@ a:hover, * a:hover, a:hover * {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.row.photorow .row {
+    margin-right:0;
+}
 .caption {
   	font-size: 1em;
     line-height:1.8em;
@@ -394,6 +345,48 @@ a:hover, * a:hover, a:hover * {
     cursor: default; 
     text-indent:0;
     margin-bottom:1em;
+}
+.th {
+    border:none;
+}
+.th:hover, .th:focus {
+    box-shadow: 0 0 6px 1px rgba(143,156,163,0.5);
+}
+.centergallery {
+    max-width:100%;
+    overflow:hidden;
+    display:block;
+    position:relative;
+}
+.centergallery button span {
+    font-family: Times, Georgia, serif !important;
+    font-size:2em;
+    display:block;
+    color:rgba(20,20,20,.8);
+    text-shadow: 0px 0px 2px rgba(80,80,80,.5);
+    transform:scale(1,4); /* W3C */
+    -webkit-transform:scale(1,4); /* Safari and Chrome */
+    -moz-transform:scale(1,4); /* Firefox */
+    -ms-transform:scale(1,4); /* IE 9 */
+    -o-transform:scale(1,4); /* Opera */
+}
+.centergallery button.slick-next {
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:20%;
+    text-align:left;
+    background: rgba(255,255,255,.7);
+}
+.centergallery button.slick-prev {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:20%;
+    text-align:right;
+    background: rgba(255,255,255,.7);
 }
 a p.mugcap {
     color:SteelBlue;
