@@ -112,36 +112,8 @@ p.byline {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     color: #FFFFFF;
 }
-h2.title {
-    font-size: 5em;
-    line-height: 1em;
-    text-transform: uppercase;
-    letter-spacing:1px;
-    text-align: center;
-    color: #f5f5ff;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
-    color: rgba(245,245,255,0.8);
-    margin:0;
-    height:0;
-}
-h3.titlespan {
-    font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif !important;
-    font-weight: 300;
-    font-size: 3em;
-    line-height: 1em;
-    text-transform:none;
-    letter-spacing:1px;
-    text-align: center;
-    color: #f5f5ff;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
-    color: rgba(245,245,255,0.8);
-    margin:0;
-    height:0;
-}
 .opener div#title, .tweener div.title {
-    width:100%;
+    width:50%;
     height:100%;
 }
 .opener.opener1 {
@@ -152,13 +124,40 @@ h3.titlespan {
     top:0;
     left:0;
 }
-div#title h3.titlespan {
+div#title h1.title {
     width:100%;
-    margin:10% 0 0;
+    margin:15% 0 2%;
+    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 0px;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #f0f0f5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    color: rgba(245,245,255,0.8);
+    display: block;
 }
-div#title h2.title {
+div#title h2.subtitle {
     width:100%;
-    margin:3% 0 0;
+    margin:0;
+    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif !important;
+    font-size: 1.8em;
+    font-weight:300;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fafaff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    color: rgba(245,245,255,0.8);
+    display: block;
+}
+div#title h2.subtitle span {
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
