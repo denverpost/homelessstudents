@@ -13,12 +13,14 @@ function getNodePosition(node) {
 $(window).scroll(function() {
 	var s = $(window).scrollTop();
 	var t = getNodePosition('.opener.opener2');
+	var u = getNodePosition('.opener.opener3');
 	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	opacityNew = s / h;
 	opacityNewTwo = t / h;
-	console.log(1 - opacityNewTwo);
+	opacityNewThree = u / h;
 	$(".opener.opener1 div#title").children().css("opacity", 1 - opacityNew);
-	$(".opener.opener2 div.title-below").children().css("opacity", 1 - opacityNewTwo);
+	$(".opener.opener2 div.title-below").children().css("opacity", 1 - opacityNewTwo*.75);
+	$(".opener.opener3 div.title-below").children().css("opacity", 1 - opacityNewThree*.75);
 	$('#name1').css("opacity", 1 - opacityNew*.75);
 	$('#name2').css("opacity", opacityNew*.75);
 });
