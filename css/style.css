@@ -60,15 +60,12 @@ p.byline {
     margin: 0 0 2em;
     overflow: hidden;
 }
-.opener.tweener {
-    height:105%;
-    margin: 2em 0;
-}
 .opener1 {
     background-image: url('../img/part1main.jpg');
 }
-.tweener1 {
+.opener2 {
     background-image: url('../img/el-reno-tornado-2.jpg');
+    height: 101%;
 }
 .opener .openercaption {
     position:absolute;
@@ -112,19 +109,17 @@ p.byline {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     color: #FFFFFF;
 }
-.opener div#title, .tweener div.title {
-    width:50%;
-    height:100%;
-}
-.opener.opener1 {
+.opener {
     position: relative;
 }
-.opener.opener1 div#title {
+.opener div#title, .opener div.title-below {
     position: fixed;
     top:0;
     left:0;
+    width:50%;
+    height:100%;
 }
-div#title h1.title {
+div#title h1.title, div.title-below h1.title {
     width:100%;
     margin:15% 0 2%;
     font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif !important;
@@ -140,7 +135,7 @@ div#title h1.title {
     color: rgba(245,245,255,0.8);
     display: block;
 }
-div#title h2.subtitle {
+div#title h2.subtitle, div.title-below h2.subtitle {
     width:100%;
     margin:0;
     font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif !important;
@@ -155,9 +150,9 @@ div#title h2.subtitle {
     color: rgba(245,245,255,0.8);
     display: block;
 }
-div#title h2.subtitle span {
-    font-weight: 700;
-    letter-spacing: 1px;
+div.title-below h2.subtitle {
+    margin:17% 0 0!important;
+    opacity: 0;
 }
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -170,14 +165,11 @@ h1, h2, h3, h1 *, h2 *, h3 * {
 h1 * {
   	text-transform: uppercase;
 }
-p {
-    text-indent:2.5em;
-}
 p, .row li, .reveal-modal li {
   	color: #333;
     font-size:1.05em;
     line-height:2em;
-    margin-bottom:.15em;
+    margin-bottom:1.5em;
     list-style:circle inside;
 }
 #credits .row {
@@ -302,17 +294,23 @@ div.mapwrap > iframe {
     padding: .2em 0 0 .25em;
     background: #333;
 }
+h3.subheading {
+    font-family:'Merriweather', Georgia, Times, serif;
+    font-size:2em;
+    font-weight:700;
+    display:block;
+    text-align:center;
+    margin:2em auto 1em;
+    padding:0 0 .25em;
+    width:60%;
+    border-bottom:1px solid rgba(0,0,0,.4);
+}
 p.lead {
-  	font-size: 1.4em;
+  	font-size: 1.25em;
   	line-height: 1.6em;
   	margin-bottom: 1em;
   	font-weight: 700;
     text-indent:0;
-}
-p.lead.later {
-    margin-top:2em;
-    padding-top:2em;
-    border-top:1px solid #ddd;
 }
 p.small {
     font-size: .7em;
@@ -339,18 +337,42 @@ a:hover, * a:hover, a:hover * {
 .row.photorow .row {
     margin-right:0;
 }
+.photoblock-right {
+    float:right;
+    width:40%;
+    margin: .5em 0 .5em 1.5em;
+    padding:1.5em 0;
+    border-top:1px solid rgba(0,0,0,0.2);
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.photoblock-left {
+    float:left;
+    width:40%;
+    margin: .5em 1.5em .5em 0;
+    padding:1.5em 0;
+    border-top:1px solid rgba(0,0,0,0.2);
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.photoblock-left .row, .photoblock-right .row {
+    margin:0;
+}
 .caption {
-  	font-size: 1em;
-    line-height:1.8em;
-    color: #222222;
-    padding: 0;
+  	font-size: .9em;
+    line-height:1.4;
+    color: rgba(0,0,0,0.6);
+    padding: .75em 0 0;
     margin: 0;
-    font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-style: normal;
     cursor: default; 
     text-indent:0;
-    margin-bottom:1em;
+}
+.caption span.photocred {
+    color: rgba(0,0,0,0.5);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 .th {
     border:none;
@@ -365,11 +387,12 @@ a:hover, * a:hover, a:hover * {
     position:relative;
 }
 .centergallery .columns {
-    padding:0 1em;
+    padding:0 1.5em;
 }
 .centergallery button span {
     font-family: Times, Georgia, serif !important;
     font-size:2em;
+    margin:0 1em;
     display:block;
     color:rgba(20,20,20,.8);
     text-shadow: 0px 0px 2px rgba(80,80,80,.5);
@@ -458,22 +481,6 @@ p.morephotos:before {
     overflow: visible;
     cursor: pointer;
 }
-.caption span.photocred {
-    color: #222222;
-    padding: 0;
-    margin: 0;
-    font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
-    font-weight: 300;
-    font-size:.9em;
-    line-height:1.8em;
-    font-style: italic;
-    letter-spacing:.75px;
-    position: relative;
-    cursor: default; 
-    text-indent:0;
-    clear:left;
-}
-
 blockquote {
 	font-size: 1.5em;
 	line-height: 1.4em;
