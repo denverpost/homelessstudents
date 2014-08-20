@@ -7,7 +7,7 @@
 
 /* SITE */
 	Standards: HTML5, CSS3
-	Components: Modernizr, jQuery, jQuery.inview, Google Fonts, ZURB Foundation, TopBar, Reveal
+	Components: Modernizr, jQuery, slick, Google Fonts, ZURB Foundation, TopBar, Reveal
 	Software: Coda, Sublime Text 3, Git, Google Chrome, Mozilla Firefox, Web developer for Firefox, Adobe Photoshop
 	Last update: 2013/10/09
 

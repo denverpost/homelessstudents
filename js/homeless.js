@@ -1,8 +1,11 @@
 $(document).foundation('reveal', {animation: 'fade', animationspeed: 200});
 
-function revealBio(bioname) {
-	$('.top-bar, [data-topbar]').css('height', '').removeClass('expanded');
-	$(bioname).foundation('reveal', 'open');
+function revealCredits() {
+	$('#credits').foundation('reveal', 'open');
+}
+
+function scrollDownTo(whereToScroll) {
+	$('html,body').animate({ scrollTop: ($(whereToScroll).offset().top - 45)}, 300);
 }
 
 function getNodePosition(node) {
@@ -18,6 +21,9 @@ $(window).scroll(function() {
 	opacityNew = s / h;
 	opacityNewTwo = t / h;
 	opacityNewThree = u / h;
+	if (opacityNew > 1 && opacityNew < 1.1) {
+		showAd();
+	}
 	$(".opener.opener1 div#title").children().css("opacity", 1 - opacityNew);
 	$(".opener.opener2 div.title-below").children().css("opacity", 1 - opacityNewTwo*.75);
 	$(".opener.opener3 div.title-below").children().css("opacity", 1 - opacityNewThree*.75);
@@ -54,3 +60,17 @@ $(document).ready(function(){
 		]
 		});
 });
+
+var moreAd = true;
+function hideAdManual() {
+    $('#adwrapper').fadeOut(200);
+    $('a.boxclose').css('display','none');
+    moreAd = false;
+}
+function showAd() {
+    if (moreAd && $("#adwrapper").html().length > 50) {
+        $('#adwrapper').fadeIn(300);
+        $('a.boxclose').fadeIn(300);
+        moreAd = false;
+    }
+}
