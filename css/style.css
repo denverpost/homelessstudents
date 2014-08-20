@@ -430,11 +430,11 @@ a:hover, * a:hover, a:hover * {
     cursor:default; 
     text-indent:0;
 }
-.caption span.photocred {
-    color:rgba(0,0,0,0.5);
+.caption span.captionhed {
+    text-transform: uppercase;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
-    font-weight:600;
-    font-style:italic;
+    font-weight:800;
+    padding-right:.5em;
 }
 .th {
     border:none;
