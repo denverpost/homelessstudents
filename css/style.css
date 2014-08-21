@@ -346,7 +346,7 @@ div.mapwrap > iframe {
 }
 h3.subheading {
     font-family:'Merriweather', Georgia, Times, serif;
-    font-size:1.75em;
+    font-size:2.25em;
     font-weight:700;
     display:block;
     text-align:center;
@@ -531,6 +531,12 @@ p.morephotos:before {
     overflow:visible;
     cursor:pointer;
 }
+p.splainer {
+    font-style: italic;
+    border-left:.5em solid #eee;
+    margin:1em;
+    padding:0 3em;
+}
 /* charts */
 #thecharts {
     margin-bottom:3em;
@@ -549,6 +555,15 @@ p.morephotos:before {
 }
 #thecharts a.livechart {
     background:#eee;
+}
+.chartcap {
+    font-style: italic;
+    display:block;
+    width:100%;
+    text-align:right;
+    margin-bottom:1em;
+    font-size:.9em;
+    color:#222;
 }
 #high_chart_div_wrap, #large_chart_div_wrap {
     overflow-x: hidden; 
@@ -820,7 +835,7 @@ div#footer-bar ul.social li {
         margin:5em 0 2.5em;
     }
     h3.subheading {
-        font-size:1.3em;
+        font-size:1.6em;
         margin:2.5em auto 1.5em;
     }.twinphoto .photoleft {
         width:100%;

@@ -88,11 +88,6 @@ function showPercentChart() {
 	$('.percentLink').addClass('livechart');
 }
 
-function executeAsynchronously(functions, timeout) {
-  for(var i = 0; i < functions.length; i++) {
-    setTimeout(functions[i], timeout);
-  }
-}
 function loadFirstChart() {
 	google.load("visualization", "1", {packages:["corechart"]});
 	google.setOnLoadCallback(drawChart);
@@ -119,12 +114,10 @@ function loadFirstChart() {
         var options = {
 			title: 'Large School Districts: Number of Homeless Students',
 			legend: { position: 'top' },
-			/* bar: {groupWidth: '80%' }, */
 			isStacked: true,
 			hAxis: { textPosition: 'none' },
 			vAxis: { textPosition: 'out' },
-			vAxis: { textStyle: {fontSize: 12, bold:true} },
-			//vAxis: {title: 'Year',  titleTextStyle: {color: 'red'}}
+			vAxis: { textStyle: {fontSize: 14, bold:true} },
 			series: { 0: { color: 'lightgray'}, 1: { color: 'steelblue' }}
         };
 
@@ -154,12 +147,10 @@ function loadSecondChart() {
         var options = {
 			title: 'School Districts with Highest Percentage of Homeless Students',
 			legend: { position: 'top' },
-			/*bar: {groupWidth: '80%' }, */
 			isStacked: true,
 			hAxis: { textPosition: 'none' },
 			vAxis: { textPosition: 'out' },
-			vAxis: { textStyle: {fontSize: 12, bold:true} },
-			//vAxis: {title: 'Year',  titleTextStyle: {color: 'red'}}
+			vAxis: { textStyle: {fontSize: 14, bold:true} },
 			series: { 0: { color: 'lightgray'}, 1: { color: 'steelblue' }}
         };
 
