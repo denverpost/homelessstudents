@@ -1,3 +1,5 @@
+var playedVideos = [];
+
 $(document).foundation('reveal', {
     animation: 'fade',
     animationspeed: 200
@@ -21,6 +23,20 @@ function getNodePosition(node) {
 $('.top-top').click(function(evt) {
     $('.toggle-topbar').click();
 });
+
+function playerCreator(embedId, playerId, divId) {
+    divId = typeof divId !== 'undefined' ? divId : false;
+    if (divId) {
+        $(divId).animate({backgroundColor:'rgba(0,70,70,0.3)',paddingLeft:'.5em',paddingRight:'.5em'}, 350).delay(2000).animate({backgroundColor:'transparent',paddingLeft:'0',paddingRight:'0'},1000);
+    }
+    if (playedVideos.indexOf(playerId) != 0) {
+        playedVideos.push(playerId);
+        $('#' + embedId).html('<video id="'+embedId+'player" preload controls autoplay> \n\
+            <source src="./video/'+playerId+'.mp4" /> \n\
+            <source src="./video/'+playerId+'.webm" /> \n\
+        </video>');
+    }
+}
 
 function fadeTitles() {
     var s = $(window).scrollTop();

@@ -548,6 +548,9 @@ path {
     background-position:center center;
     display:block;
 }
+.vid-embed video {
+    width:100%;
+}
 .play_icon {
     width:12%;
     position:absolute;
